@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/movie-tracker/.vs/movie-tracker
+/movie-tracker/movie-tracker/bin/Debug/net8.0
+/movie-tracker/movie-tracker/obj
+*.user
