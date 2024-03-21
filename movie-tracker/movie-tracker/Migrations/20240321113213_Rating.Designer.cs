@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using movie_tracker.Data;
 
@@ -11,9 +12,11 @@ using movie_tracker.Data;
 namespace movie_tracker.Migrations
 {
     [DbContext(typeof(movie_trackerContext))]
-    partial class movie_trackerContextModelSnapshot : ModelSnapshot
+    [Migration("20240321113213_Rating")]
+    partial class Rating
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
