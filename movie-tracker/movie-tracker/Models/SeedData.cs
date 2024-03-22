@@ -21,31 +21,35 @@ public static class SeedData
             context.Movie.AddRange(
                 new Movie
                 {
-                    Title = "When Harry Met Sally",
-                    ReleaseDate = DateTime.Parse("1989-2-12"),
-                    Genre = "Romantic Comedy",
+                    Title = "The Lord of the Rings: The Fellowship of the Rings",
+                    ReleaseDate = DateTime.Parse("2001-12-20"),
+                    Genre = "Fantasy/Adventure",
+                    Rating = "PG",
                     Price = 7.99M
                 },
                 new Movie
                 {
-                    Title = "Ghostbusters ",
-                    ReleaseDate = DateTime.Parse("1984-3-13"),
-                    Genre = "Comedy",
-                    Price = 8.99M
+                    Title = "The Lord of the Rings: The Two Towers",
+                    ReleaseDate = DateTime.Parse("2003-1-11"),
+                    Genre = "Fantasy/Adventure",
+                    Rating = "PG",
+                    Price = 7.99M
                 },
                 new Movie
                 {
-                    Title = "Ghostbusters 2",
-                    ReleaseDate = DateTime.Parse("1986-2-23"),
-                    Genre = "Comedy",
+                    Title = "Blade Runner 2049",
+                    ReleaseDate = DateTime.Parse("2017-8-6"),
+                    Genre = "Sci-fi/Thriller",
+                    Rating = "R",
                     Price = 9.99M
                 },
                 new Movie
                 {
-                    Title = "Rio Bravo",
-                    ReleaseDate = DateTime.Parse("1959-4-15"),
-                    Genre = "Western",
-                    Price = 3.99M
+                    Title = "Mad Max: Fury Road",
+                    ReleaseDate = DateTime.Parse("2015-5-14"),
+                    Genre = "Action/Adventure",
+                    Rating = "R",
+                    Price = 9.99M
                 }
             );
             context.SaveChanges();
